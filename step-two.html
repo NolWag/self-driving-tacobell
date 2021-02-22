@@ -1,0 +1,272 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body {
+	font-family: 'Montserrat', san-serif;
+}
+
+.noDisplay {
+	display: none !important;
+}
+
+.shop__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.button-image__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 280px;
+    text-align: center;
+	margin: 0 20px;
+}
+
+.button-image__container img {
+	width: 220px;
+}
+
+.shop__button {
+		  border: 0 none;
+		font-family: 'Montserrat', san-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 0;
+    background: #e98300;
+    color: #fff;
+		text-transform: uppercase;
+	  height: 60px;
+	margin: 0 12px;
+	width: 220px;
+}
+
+.shop__button:hover {
+}
+
+.checkout__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+.checkout__wrapper h3 {
+	font-family: 'Montserrat', san-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.checkout__table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.checkout__item {
+	display: flex;
+	justify-content: space-between;
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 15px 0;
+	width: 600px;
+}
+
+.checkout__total {
+	width: 200px;
+	background-color: #eee;
+	padding: 20px;
+	display: flex;
+	border-radius: 10px;
+	justify-content: space-between;
+}
+
+.checkout__button {
+	border: 0 none;
+	font-family: 'Montserrat', san-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 0;
+    background: #e98300;
+    color: #fff;
+	text-transform: uppercase;
+	height: 60px;
+	margin: 0 12px;
+	margin-top: 20px
+}
+
+.payment__wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 25px;
+	height: 90vh;
+}
+
+.payment__creditcard {
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 20px;
+	width: 400px;
+}
+
+.complete__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+.complete__button {
+	 border: 0 none;
+		font-family: 'Montserrat', san-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 0;
+    background: #e98300;
+    color: #fff;
+		text-transform: uppercase;
+	  height: 60px;
+	margin: 0 12px;
+}
+
+.quantity__image {
+	width: 200px;
+    margin: 20px 0;
+}
+
+.text-info {
+	min-height: 50px;
+	font-size: 12px;
+}
+</style>
+
+<div class="">
+	<img style="padding: 20px;" src="images/shop-logo.png" />
+</div>
+<!-- STEP ONE -->
+<div id="shop" class="shop__wrapper">
+	<div class="button-image__container">
+	<img src="https://www.teslarati.com/wp-content/uploads/2019/07/tesla-model-s-raven-2.jpg" />
+	<button class="shop__button">Private Self Driving</button>
+	</div>
+	<div class="button-image__container">
+			<img src="https://cnet2.cbsistatic.com/img/Rj7Tw-4XTt3pstg9Gy_aIinao5k=/1092x0/2020/02/13/ae1b9b28-ac0f-4b16-90c7-1f232b6633e4/press00-model-x-rear-three-quarter-with-doors-open.jpg" />
+		<button id="btnOne" class="shop__button">Taxi Self Driving</button>
+	</div>
+</div>
+<!-- STEP TWO -->
+<div id="options" class="shop__wrapper">
+	<div class="button-image__container">
+		<h3>Delivery</h3>
+		<p class="text-info">Order will be delivered to a<br> location of your choice.</p>
+		<button class="shop__button">Select</button>
+	</div>
+	<div class="button-image__container">
+		<h3>Curbside Pickup</h3>
+		<p class="text-info">Order will be brought to your car.</p>
+		<button id="btnTwo" class="shop__button">Select</button>
+	</div>
+	<div class="button-image__container">
+		<h3>Drop Off</h3>
+		<p class="text-info">You will be dropped off at<br> this location.</p>
+		<button class="shop__button">Select</button>
+	</div>
+</div>
+
+<!-- STEP THREE -->
+<div id="quantity" class="checkout__wrapper noDisplay">
+	<h3>Crunchwrap Supreme</h3>
+	<p>$00.88</p>
+	<div class="checkout__table">
+		<img class="quantity__image" src="/images/crunchwrap-supreme.jpeg" />
+
+		<div class="quantity__item">
+			<input value="1" type="number" name="quantity" min="1" max="1">
+		</div>
+	</div>
+	<button id="btnThree" class="checkout__button">Checkout</button>
+</div>
+
+<!-- STEP FOUR -->
+<div id="checkout" class="checkout__wrapper noDisplay">
+	<h3>Checkout</h3>
+	<div class="checkout__table">
+		<div class="checkout__item">
+			<span>1</span>
+			<span>Crunchwrap Supreme</span>
+			<span>$00.88</span>
+		</div>
+		<div class="checkout__item">
+			<span>1</span>
+			<span>Fee - Change of Route</span>
+			<span>$1.50</span>
+		</div>
+	</div>
+	<div style="flex-direction:row; justify-content:flex-end;" class="checkout__table">
+		<div class="checkout__total">
+			<span>Total</span>
+			<span>$2.38</span>
+		</div>
+	</div>
+	<button id="btnFour" class="checkout__button">Payment Method</button>
+</div>
+
+<!--- STEP FIVE -->
+<div id="payment" class="payment__wrapper noDisplay">
+	<h3>Payment</h3>
+	<div style="margin: 15px 0;">
+	<input type="radio"/>
+	<span class="payment__creditcard">Credit Card On Account - Ending in 9466</span>
+	</div>
+	<button id="btnFive" class="checkout__button">Complete Order</button>
+</div>
+
+<!-- STEP SIX -->
+<div id="complete" class="complete__wrapper noDisplay">
+	<h3>Order Complete</h3>
+	<p>Your order will be ready when you arrive!</p>
+	<button onClick="javascript:window.close('','_parent','');" id="finalBtn" class="complete__button">Take Me There</button>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+    $('#btnOne').click(function() {
+	$('#shop').hide();
+	$('#options').removeClass('noDisplay');
+})
+
+$('#btnTwo').click(function() {
+	$('#options').hide();
+	$('#quantity').removeClass('noDisplay');
+});
+
+$('#btnThree').click(function() {
+	$('#quantity').hide();
+	$('#checkout').removeClass('noDisplay');
+});
+
+$('#btnFour').click(function() {
+	$('#checkout').hide();
+	$('#payment').removeClass('noDisplay');
+});
+
+$('#btnFive').click(function() {
+	$('#payment').hide();
+	$('#complete').removeClass('noDisplay');
+});
+
+
+
+</script>

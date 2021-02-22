@@ -1,0 +1,311 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+h1, p {
+	font-family: 'Montserrat', san-serif;
+	color: #444;
+}
+
+.product__image img {
+	max-width: 300px;
+}
+
+.product__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.product__container {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+.product__price {
+	font-size: 22px;
+}
+
+.product__quantity-label {
+		color: #AAB1B4;
+    text-transform: uppercase;
+    font-size: 12px;
+		font-family: 'Montserrat', san-serif;
+		margin-bottom: 10px;
+}
+
+.product__quantity-selector {
+	    width: 178px;
+    font-weight: 700;
+    color: #808080;
+    font-size: 12px;
+    padding: 13px 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.product__button {
+	    border: 0 none;
+			font-family: 'Montserrat', san-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 0;
+    background: #e98300;
+    color: #fff;
+    width: 100%;
+	text-transform: uppercase;
+}
+
+.product__button:hover {
+	background: #f39ebc;
+	transition: .4s;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+	position: fixed;
+ display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+	text-align: center;
+	min-height: 80%;
+	position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__button-container {
+	margin: 0 20px;
+	margin-top: 40px;
+}
+
+.modal__button-container--group {
+	display: flex;
+}
+
+.modal__btn {
+	  border: 0 none;
+		font-family: 'Montserrat', san-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 0;
+    background: #e98300;
+    color: #fff;
+		text-transform: uppercase;
+	  height: 60px;
+	margin: 0 12px;
+}
+
+.modal__btn:hover {
+		background: #f39ebc;
+	transition: .4s;
+
+}
+
+.modal__logo {
+	height: 20px;
+	margin-bottom: 20px
+}
+
+.modal__button-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 35px 15px
+}
+
+.modal__title {
+	margin-bottom: 50px;
+}
+
+.modal__message {
+	text-align: center;
+	font-family: 'Montserrat', san-serif;
+	text-transform: uppercase;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.product__main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 20%;
+	margin: 0 20px;
+}
+
+
+.product__content {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+}
+</style>
+
+<div class="product__wrapper">
+	<div class="product__main">
+	<div class="product__image">
+		<img class="" src="/images/Phone.jpg" />
+	</div>
+	<div class="product__content">
+		<h2>Samsung Galaxy S20</h2>
+		<h2>Best Buy</h2>
+		<h3>24 minutes</h3>
+		<p class="product__price">$399.00 USD</p>
+		<div class="product__container">
+			<button class="product__button">Order Now</button>
+		</div>
+	</div>
+	</div>
+	<div class="product__main">
+		<div class="product__image">
+			<img class="" src="/images/Phone.jpg" />
+		</div>
+		<div class="product__content">
+			<h2>Samsung Galaxy S20</h2>
+			<h2>Walmart</h2>
+			<h3>30 minutes</h3>
+			<p class="product__price">$384.00 USD</p>
+			<div class="product__container">
+				<button class="product__button">Order Now</button>
+			</div>
+		</div>
+		</div>
+		<div class="product__main">
+			<div class="product__image">
+				<img class="" src="/images/Phone.jpg" />
+			</div>
+			<div class="product__content">
+				<h2>Samsung Galaxy S20</h2>
+				<h2>Target</h2>
+				<h3>12 minutes</h3>
+				<p class="product__price">$365.00 USD</p>
+				<div class="product__container">
+					<button class="product__button">Order Now</button>
+				</div>
+			</div>
+			</div>
+			<div class="product__main">
+				<div class="product__image">
+					<img class="" src="/images/Phone.jpg" />
+				</div>
+				<div class="product__content">
+					<h2>Samsung Galaxy S20</h2>
+					<h2>Bob's Discount</h2>
+					<h3>6 minutes</h3>
+					<p class="product__price">$349.00 USD</p>
+					<div class="product__container">
+						<a href="/step-two"><button class="product__button">Order Now</button></a>
+					</div>
+				</div>
+				</div>
+							
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+	
+  <div class="modal-content">
+				<!-- <img style="width:200px;" src="images/Socola-Chocolatier.png" /> -->
+				<!-- <h2 class="modal__message">You are leaving Socola Chocolatier!</h2> -->
+		<span class="close">&times;</span>
+		<div class="flex-container">
+			<!-- <div class="modal__button-container">
+				<p class="modal__title">Delivery</p>
+			<div class="modal__button-block">
+			<img class="modal__logo" src="https://logodownload.org/wp-content/uploads/2019/05/uber-eats-logo.png" />
+			<button class="modal__btn">Uber Eats</button>
+			</div>
+			
+			<div class="modal__button-block">
+			<img class="modal__logo" src="https://logodix.com/logo/856415.png" />
+			<button class="modal__btn">Post Mates</button>
+			</div>
+			<div class="modal__button-block">
+			<img class="modal__logo" src="data:image/png;base64,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" />
+			<button class="modal__btn">Grubhub</button>
+				</div>
+			</div> -->
+			<div class="modal__button-container">
+				<p class="modal__title">Curbside Pickup</p>
+			<div class="modal__button-block">
+				<img class="modal__logo" style="height:30px;" src="https://0201.nccdn.net/1_2/000/000/0ae/4e5/logo.png#RDAMDAID24588593" />
+			<a href="/step-two"><button class="modal__btn">ShopNRide<br/>In Self-Driving Car</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
